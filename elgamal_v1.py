@@ -93,7 +93,7 @@ def Main(mess):
         cmp_p = str(p)
         tmp, f, pairs = '', 0, []
 #       откроем файл для записи результата (криптограммы)
-        f_out = open('output.txt', 'w')
+        f_out = open('cryptogram.txt', 'w')
         while f < len(codemess):
 #            к - рандомно выбирается
             k = random.randint(2, p-2)
@@ -155,7 +155,7 @@ def Main(mess):
         print(pairs)
     else:
 #        если мы выбрали режим ДЕШИФРОВАНИЯ
-        f_dec = open('output.txt', 'r')
+        f_dec = open('cryptogram.txt', 'r')
 #        print (f_dec.read())
 #       пустая переменная для записи нашего расшифрованного сообщения
         mess = []
@@ -208,9 +208,9 @@ def Square_root(p):
         if euler_func == current_func:
             return g
 #файл для mess
-f = open('input.txt', 'r')
+f = open('message.txt', 'r')
 mess = f.readline()
 f.close()
 Main(mess)
-#input ()
+
 
