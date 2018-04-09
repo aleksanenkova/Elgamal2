@@ -1,3 +1,11 @@
+# Requirements
+
+***
+##### `Python3 elgamal_v1.py `
+Files must be created:
+##### `cryptogram.txt`
+##### `message.txt`
+
 # Message Encryption
 To start, you need to generate a public key:
 
