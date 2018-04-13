@@ -20,7 +20,7 @@ def base(p, r_):
     i = 0
     j = 0
     while (d% 2 == 0):
-        d = d/2
+        d = int(d/2)
         s+=1
 
     for a in range(r_):
